@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blood Stock Inventory — Surya Blood Bank</title>
+<meta name="description" content="Live blood stock inventory dashboard by blood group across Surya Blood Bank's partner hospitals.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 4 12.1 4 17a8 8 0 0 0 16 0c0-4.9-8-15-8-15z"/></svg>
+      <span>Surya Blood Bank<small>Community Donor Network</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="request.html">Request</a></li>
+      <li><a href="inventory.html">Stock</a></li>
+      <li><a href="events.html">Camps &amp; Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="donate.html" class="nav-cta">Become a Donor</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">Home <span>/</span> Blood Stock</div>
+      <h1>Live inventory across our partner network</h1>
+      <p>Figures are aggregated from partner hospitals and blood banks in Kurnool district, refreshed hourly. Use this to see what's genuinely needed right now.</p>
+    </div>
+  </section>
+
+  <div class="pulse-divider">
+    <svg viewBox="0 0 1200 52" preserveAspectRatio="none">
+      <polyline class="pulse-line" points="0,26 260,26 300,26 320,6 345,46 370,26 420,26 450,10 470,42 495,26 1200,26"/>
+    </svg>
+  </div>
+
+  <section>
+    <div class="container grid grid-2" style="align-items:center; gap:44px; margin-bottom:50px;">
+      <div>
+        <span class="kicker">Snapshot</span>
+        <h2 style="font-size:clamp(1.5rem,3vw,2rem);">242 total units currently in the network</h2>
+        <p>Stock changes constantly as donations come in and hospitals dispatch units — treat this as a directional guide, and always confirm through the emergency desk for critical cases.</p>
+        <p class="mono" style="font-size:.82rem; color:var(--ink-soft);">Last synced: today, 09:40 AM &middot; Source: 36 partner hospitals</p>
+      </div>
+      <img src="https://images.pexels.com/photos/4680222/pexels-photo-4680222.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Blood bag on a collection and storage monitor" style="border-radius:8px; box-shadow:var(--shadow);">
+    </div>
+
+    <div class="container" style="overflow-x:auto;">
+      <table class="inv-table">
+        <thead>
+          <tr>
+            <th>Blood Group</th>
+            <th>Units Available</th>
+            <th>Status</th>
+            <th style="min-width:160px;">Stock Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">O+</span> O Positive</td>
+            <td class="mono">63 units</td>
+            <td><span class="level level-high"><span class="level-dot"></span>Healthy</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="90" style="background:var(--sage);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">A+</span> A Positive</td>
+            <td class="mono">42 units</td>
+            <td><span class="level level-high"><span class="level-dot"></span>Healthy</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="65" style="background:var(--sage);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">B+</span> B Positive</td>
+            <td class="mono">37 units</td>
+            <td><span class="level level-high"><span class="level-dot"></span>Healthy</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="58" style="background:var(--sage);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">AB+</span> AB Positive</td>
+            <td class="mono">19 units</td>
+            <td><span class="level level-mid"><span class="level-dot"></span>Limited</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="34" style="background:var(--sand);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">O-</span> O Negative</td>
+            <td class="mono">4 units</td>
+            <td><span class="level level-low"><span class="level-dot"></span>Critical</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="8" style="background:var(--crimson);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">A-</span> A Negative</td>
+            <td class="mono">11 units</td>
+            <td><span class="level level-mid"><span class="level-dot"></span>Limited</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="20" style="background:var(--sand);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">B-</span> B Negative</td>
+            <td class="mono">8 units</td>
+            <td><span class="level level-low"><span class="level-dot"></span>Critical</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="15" style="background:var(--crimson);"></div></div></td>
+          </tr>
+          <tr>
+            <td style="display:flex; align-items:center; gap:12px;"><span class="bg-chip" style="width:40px;height:40px;font-size:.8rem;">AB-</span> AB Negative</td>
+            <td class="mono">4 units</td>
+            <td><span class="level level-low"><span class="level-dot"></span>Critical</span></td>
+            <td><div class="bar-track"><div class="bar-fill" data-pct="8" style="background:var(--crimson);"></div></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section-bone-dim">
+    <div class="container grid grid-2" style="align-items:center; gap:44px;">
+      <img src="https://images.pexels.com/photos/6627693/pexels-photo-6627693.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Medical professional holding a blood sample tube in a lab" style="border-radius:8px; box-shadow:var(--shadow);">
+      <div>
+        <span class="kicker">Reading the dashboard</span>
+        <h2 style="font-size:clamp(1.4rem,2.6vw,1.8rem);">What "Healthy", "Limited" and "Critical" mean</h2>
+        <ul style="display:flex; flex-direction:column; gap:14px; margin-top:20px;">
+          <li class="card" style="padding:14px 18px;"><span class="level level-high" style="margin-bottom:4px;"><span class="level-dot"></span>Healthy</span><p style="margin:4px 0 0;">More than 4 days of expected demand covered.</p></li>
+          <li class="card" style="padding:14px 18px;"><span class="level level-mid" style="margin-bottom:4px;"><span class="level-dot"></span>Limited</span><p style="margin:4px 0 0;">1–4 days of cover — donors of this group are encouraged to come in soon.</p></li>
+          <li class="card" style="padding:14px 18px;"><span class="level level-low" style="margin-bottom:4px;"><span class="level-dot"></span>Critical</span><p style="margin:4px 0 0;">Less than a day of cover — active alerts are going out to matching donors.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>See a critical group above?</h2>
+          <p>If your blood group is listed as critical, your donation right now makes an outsized difference.</p>
+        </div>
+        <a href="donate.html" class="btn" style="background:#fff; color:var(--crimson);">Donate Today</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="margin-bottom:14px; display:inline-flex;">
+          <svg class="brand-mark" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C12 2 4 12.1 4 17a8 8 0 0 0 16 0c0-4.9-8-15-8-15z"/></svg>
+          <span>Surya Blood Bank</span>
+        </a>
+        <p>A community blood donor network and inventory system built as a B.Tech CSE academic project, GPCET Kurnool.</p>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="donate.html">Donate Blood</a></li>
+          <li><a href="request.html">Request Blood</a></li>
+          <li><a href="inventory.html">Blood Stock</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="events.html">Camps &amp; Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html#eligibility">Eligibility Criteria</a></li>
+          <li><a href="contact.html#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Emergency Desk</h4>
+        <ul>
+          <li>Kurnool, Andhra Pradesh</li>
+          <li>helpline@suryabloodbank.org</li>
+          <li>+91 98765 43210</li>
+          <li>Open 24/7 for emergencies</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Surya Blood Bank. Academic project — GPCET, Kurnool.</span>
+      <span>Built by Surya Teja &middot; B.Tech CSE, 3rd Year</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
