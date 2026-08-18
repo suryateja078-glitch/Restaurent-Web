@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Surya — Andhra Kitchen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a href="index.html" class="logo"><img src="images/profile.svg" alt="Surya Andhra Kitchen profile mark"><span>Surya<br>Andhra Kitchen</span></a>
+    <button class="navtoggle" aria-label="Toggle menu">&#9776;</button>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Book a Table</a>
+    </div>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="crumb">Home <span class="chili-dot">&#9679;</span> Menu</span>
+    <h1>The Full Menu</h1>
+    <p style="max-width:56ch;">Every dish is cooked to order. Spice levels are a guide, not a promise — ask your server to turn it up.</p>
+  </div>
+</section>
+
+<section style="padding-top:56px;">
+  <div class="wrap">
+
+    <div class="spice-key">
+      <span style="font-weight:600;color:var(--cream);">Spice key:</span>
+      <span class="item"><span class="heat"><i class="on"></i><i></i><i></i></span> Mild</span>
+      <span class="item"><span class="heat"><i class="on"></i><i class="on"></i><i></i></span> Medium</span>
+      <span class="item"><span class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></span> Guntur-hot</span>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-target="all">All</button>
+      <button class="menu-tab" data-target="starters">Starters</button>
+      <button class="menu-tab" data-target="biryani">Biryani &amp; Rice</button>
+      <button class="menu-tab" data-target="curries">Curries</button>
+      <button class="menu-tab" data-target="breads">Breads</button>
+      <button class="menu-tab" data-target="desserts">Desserts</button>
+      <button class="menu-tab" data-target="beverages">Beverages</button>
+    </div>
+
+    <div class="menu-photo-band">
+      <figure>
+        <img src="images/22435655.jpeg" alt="Shrimp biryani served on a golden platter">
+        <figcaption>Royyala Biryani</figcaption>
+      </figure>
+      <figure>
+        <img src="images/9609846.jpeg" alt="Spicy mutton curry in a copper bowl">
+        <figcaption>Gongura Mutton</figcaption>
+      </figure>
+      <figure>
+        <img src="images/11887844.jpeg" alt="Gulab jamun dessert on a white plate">
+        <figcaption>Bobbatlu &amp; Sweets</figcaption>
+      </figure>
+    </div>
+
+    <!-- Starters -->
+    <div class="menu-category" data-category="starters">
+      <div class="cat-title"><h2>Starters</h2><span class="cat-note">served with mint &amp; tamarind chutney</span></div>
+
+      <div class="menu-item">
+        <div class="mi-left"><h4>Mirchi Bajji</h4><p>Batter-fried green chili, tamarind-onion stuffing.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="mi-price">&#8377;110</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Chicken 65</h4><p>Curry-leaf tempered, deep-fried chicken bites.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;240</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Pesarattu</h4><p>Green-gram crepe, ginger chutney, upma stuffing.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i></i><i></i></div><span class="mi-price">&#8377;150</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Punugulu</h4><p>Fermented rice-lentil fritters, ginger chutney.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i></i><i></i></div><span class="mi-price">&#8377;130</span></div>
+      </div>
+    </div>
+
+    <!-- Biryani -->
+    <div class="menu-category" data-category="biryani">
+      <div class="cat-title"><h2>Biryani &amp; Rice</h2><span class="cat-note">dum-cooked to order, 25 min</span></div>
+
+      <div class="menu-item">
+        <div class="mi-left"><h4>Royyala Biryani</h4><p>Prawn biryani, saffron rice, fried onion.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;360</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Kodi Biryani</h4><p>Guntur-style chicken biryani, boiled egg.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="mi-price">&#8377;300</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Gutti Vankaya Biryani</h4><p>Stuffed brinjal biryani, peanut-sesame masala.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;260</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Curd Rice</h4><p>Tempered yogurt rice, pomegranate, curry leaf.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i></i><i></i></div><span class="mi-price">&#8377;130</span></div>
+      </div>
+    </div>
+
+    <!-- Curries -->
+    <div class="menu-category" data-category="curries">
+      <div class="cat-title"><h2>Curries</h2><span class="cat-note">served with rice or bread</span></div>
+
+      <div class="menu-item">
+        <div class="mi-left"><h4>Gongura Mutton</h4><p>Slow-cooked goat with sorrel leaf, Guntur chili.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="mi-price">&#8377;420</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Royyala Iguru</h4><p>Pan-roasted prawns, thick onion-tomato masala.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;380</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Kodi Kura</h4><p>Home-style Andhra chicken curry.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;300</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Gutti Vankaya Kura</h4><p>Stuffed brinjal in peanut-sesame gravy.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;240</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Sambar</h4><p>Toor dal, drumstick, tamarind broth.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i></i><i></i></div><span class="mi-price">&#8377;140</span></div>
+      </div>
+    </div>
+
+    <!-- Breads -->
+    <div class="menu-category" data-category="breads">
+      <div class="cat-title"><h2>Breads</h2><span class="cat-note">baked fresh per order</span></div>
+
+      <div class="menu-item">
+        <div class="mi-left"><h4>Garlic Naan</h4><p>Tandoor-baked, roasted garlic, coriander.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="mi-price">&#8377;90</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Jonna Rotte</h4><p>Sorghum flatbread, ghee, red chili powder.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;70</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Pulka</h4><p>Whole-wheat flatbread, puffed over open flame.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i ></i><i></i></div><span class="mi-price">&#8377;50</span></div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-category" data-category="desserts">
+      <div class="cat-title"><h2>Desserts</h2><span class="cat-note">to close the meal</span></div>
+
+      <div class="menu-item">
+        <div class="mi-left"><h4>Bobbatlu</h4><p>Sweet lentil-jaggery flatbread, warm ghee.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="mi-price">&#8377;120</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Gulab Jamun</h4><p>Milk-solid dumplings, cardamom syrup.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;100</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Ariselu</h4><p>Rice-jaggery fritters, sesame crust.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i></i></div><span class="mi-price">&#8377;110</span></div>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <div class="menu-category" data-category="beverages">
+      <div class="cat-title"><h2>Beverages</h2><span class="cat-note">served chilled or hot</span></div>
+
+      <div class="menu-item">
+        <div class="mi-left"><h4>Filter Coffee</h4><p>South Indian decoction, frothed milk.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i class="on"></i></div><span class="mi-price">&#8377;60</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Buttermilk</h4><p>Spiced majjiga, curry leaf, ginger.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i ></i></div><span class="mi-price">&#8377;50</span></div>
+      </div>
+      <div class="menu-item">
+        <div class="mi-left"><h4>Nannari Sherbet</h4><p>Sarsaparilla root syrup, lemon, soda.</p></div>
+        <span class="leader"></span>
+        <div class="mi-right"><div class="heat"><i class="on"></i><i class="on"></i><i ></i></div><span class="mi-price">&#8377;80</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-bottom">
+      <span>&copy; 2026 Surya Andhra Kitchen. Academic demo project.</span>
+      <span>Kurnool, Andhra Pradesh</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Surya Andhra Kitchen profile mark</title>
+  <desc id="desc">A warm red chili and golden sun mark for Surya Andhra Kitchen.</desc>
+  <rect width="256" height="256" rx="48" fill="#16241C"/>
+  <circle cx="128" cy="116" r="66" fill="#D9A441"/>
+  <path d="M128 51c-13 23-28 39-28 67 0 28 18 47 28 47s28-19 28-47c0-28-15-44-28-67Z" fill="#B33A2E"/>
+  <path d="M128 31c0 18-7 25-18 34" fill="none" stroke="#F4ECD8" stroke-linecap="round" stroke-width="9"/>
+  <path d="M76 187c17 13 34 19 52 19s35-6 52-19" fill="none" stroke="#F4ECD8" stroke-linecap="round" stroke-width="8"/>
+</svg>
